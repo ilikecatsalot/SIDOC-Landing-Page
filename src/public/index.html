@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SIDOC</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="captext">
+      <div class="icon-container">
+        <img class="gradcap" src="images/mortarboard.png" alt="Icon">
+      </div>
+      <div class="text-container">
+        <p>Should I drop out of</p>
+        <p>college</p>
+      </div>
+    </div>
+        <p class="smallfont inv"><span id="userCount">0</span> people online</p>
+
+
+    <div class="button-container">
+        <button class="btn btn-primary percent" button id="Yes-btn" onclick="handleButtonClick('Yes')">Yes</button>
+        <button class="btn btn-primary percent" button id="No-btn" onclick="handleButtonClick('No')">No</button>
+    </div>
+    <div id="inv">
+   <p class="smallfont"><span id="totalSum">0</span> votes</p>
+ </div>
+ <div id="vis" style="display: none;">
+  <!-- Content of the second component -->
+<button class="btn btn-primary" id="shareButton">Share your reason</button>
+</div>
+    <p class="smallfont footer">A Pingal Pratyush Initiative</p>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="btnscript.js"></script>
+   <!-- Include the script.js file here -->
+</body>
+</html>
